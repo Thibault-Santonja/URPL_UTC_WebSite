@@ -1,2 +1,5 @@
 .idea
-EspaceUTC
+/EspaceUTC/
+/db.sqlite3
+/htmlcov/
+/EspaceUTC/
