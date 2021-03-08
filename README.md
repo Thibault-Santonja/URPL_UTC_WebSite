@@ -176,7 +176,7 @@ npm init react-app espace_utc_front
 ```
 
 Wait for the installation and next, add the start configuration to launch the front app :
-[](https://puu.sh/Hneoc/0a22a8d27e.png)
+![](https://puu.sh/Hneoc/0a22a8d27e.png)
 
 Next, visit [localhost:3000](http://localhost:3000/)
 
