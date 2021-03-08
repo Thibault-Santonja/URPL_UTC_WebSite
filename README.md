@@ -12,6 +12,8 @@ And if needed (especially if you need to access to some data) run the back too:
 python manage.py runserver
 ```
 
+For easy launch, create some configuration (if you use IntellJ, PyCharm or any other JetBrain products take a look to parts 1.3. and 1.6.)
+
 Project made with Django as back and React as Front (but we can  use another technology)
 
 
