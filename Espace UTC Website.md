@@ -83,6 +83,12 @@ With IntellJ, don't hesitate to create a Run Config :
 
 
 
+### Django REST serializers
+
+
+
+
+
 ### Test
 
 Please use coverage to test your Django code :
@@ -91,7 +97,9 @@ Install with pip:
 pip install coverage
 ```
 
-And run this everytime your code changes:
+And run this everytime your code changes, run coverage. Next, generate the report in html `coverage html` or call the report `coverage report`:
 ```bash
 coverage run --source='.' manage.py test
+coverage html
+coverage report
 ```
