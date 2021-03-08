@@ -128,6 +128,41 @@ urlpatterns = [
 ]
 ```
 
+Create `espace_utc_api/urls.py`, and add the URLs :
+```python
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('api/user/', views.UserListCreate.as_view()),
+]
+```
+
+Finaly, in `espace_utc_app/settings.py`, enable rest_framework :
+```python
+INSTALLED_APPS = [
+    # omitted for brevity
+    'espace_utc_api.apps.EspaceUtcApiConfig',
+    'rest_framework'
+]
+```
+
+And now, run the server !
+
+
+
+### Front with React
+
+For easier beginning : [https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)
+```bash
+npm init react-app espace_utc_front
+```
+
+Wait for the installation and next, add the start configuration to launch the front app :
+[](https://puu.sh/Hneoc/0a22a8d27e.png)
+
+Next, visit [localhost:3000](http://localhost:3000/)
+
 
 
 ### Test
@@ -144,3 +179,28 @@ coverage run --source='.' manage.py test
 coverage html
 coverage report
 ```
+
+
+### Run server
+Don't hesitate to create a configuration or run :
+```bash
+python manage.py runserver
+```
+And check [http://127.0.0.1:8000/api/user/](http://127.0.0.1:8000/api/user/) (note: 127.0.0.1 or localhost is the same thing : http://localhost:8000/api/user/)
+
+
+To access to the admin page (127.0.0.1:8000/admin/), mind to create a django superuser :
+```bash
+python manage.py createsuperuser
+```
+
+
+**NOTE**: it is a good idea to disable the browseable API in production with this configuration in `espace_utc_app/settings.py`:
+```python
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+    )
+}
+```
+While there create some contact in the builtin form. In the next section we'll get into React.
