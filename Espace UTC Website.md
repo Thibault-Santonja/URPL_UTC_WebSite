@@ -1,6 +1,21 @@
 Espace UTC Website
 ===
 
+
+To launch the app, run the front:
+```bash
+npm start espace_utc_front/
+```
+
+And if needed (especially if you need to access to some data) run the back too:
+```bash
+python manage.py runserver
+```
+
+Project made with Django as back and React as Front (but we can  use another technology)
+
+
+
 ## Project creation 
 ### Base
 
