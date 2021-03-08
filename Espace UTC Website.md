@@ -84,8 +84,49 @@ With IntellJ, don't hesitate to create a Run Config :
 
 
 ### Django REST serializers
+Serialization is the act of transforming an object into another data format. After transforming an object we can save it to a file or send it through the network. How do you render a Python class to JSON in a browser? With a Django REST serializer! A serializer converts JSON to objects. 
 
 
+Create a new file `espace_utc_api/serializers.py`
+```python
+from rest_framework import serializers
+from .models import User
+
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('id', 'email', 'hash', 'name', 'created_at')
+```
+
+
+
+### Create the views & URLs
+DANGER : Django is a Model – View – Template framework
+
+In `espace_utc_api/views.py`, create the view :
+```python
+from .models import User
+from .serializers import UserSerializer
+from rest_framework import generics
+
+
+# Create your views here (Get and Post).
+class UserListCreate(generics.ListCreateAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+```
+
+In `espace_utc_app/urls.py`, configure the URL mapping :
+```python
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('users.urls')),
+]
+```
 
 
 
