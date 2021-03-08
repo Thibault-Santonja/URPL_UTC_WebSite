@@ -16,8 +16,8 @@ Project made with Django as back and React as Front (but we can  use another tec
 
 
 
-## Project creation 
-### Base
+## 1. Project creation 
+### 1.1. Base
 
 Create main folder and move into it
 ```bash
@@ -37,7 +37,7 @@ pip install django djangorestframework
 
 
 
-### Project Structure
+### 1.2. Project Structure
 
 Create a new Django project
 ```bash
@@ -69,7 +69,7 @@ INSTALLED_APPS = [
 
 
 
-### Django model
+### 1.3. Django model
 
 **Take a look to Django fields documentation try to choose the most appropriate field please <3**
 
@@ -98,7 +98,7 @@ With IntellJ, don't hesitate to create a Run Config :
 
 
 
-### Django REST serializers
+### 1.4. Django REST serializers
 Serialization is the act of transforming an object into another data format. After transforming an object we can save it to a file or send it through the network. How do you render a Python class to JSON in a browser? With a Django REST serializer! A serializer converts JSON to objects. 
 
 
@@ -116,7 +116,7 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 
-### Create the views & URLs
+### 1.5. Create the views & URLs
 DANGER : Django is a Model – View – Template framework
 
 In `espace_utc_api/views.py`, create the view :
@@ -166,7 +166,7 @@ And now, run the server !
 
 
 
-### Front with React
+### 1.6. Front with React
 
 For easier beginning : [https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)
 ```bash
@@ -180,7 +180,7 @@ Next, visit [localhost:3000](http://localhost:3000/)
 
 
 
-### Test
+### 1.7. Test
 
 Please use coverage to test your Django code :
 Install with pip:
@@ -196,7 +196,7 @@ coverage report
 ```
 
 
-### Run server
+### 1.8. Run server
 Don't hesitate to create a configuration or run :
 ```bash
 python manage.py runserver
