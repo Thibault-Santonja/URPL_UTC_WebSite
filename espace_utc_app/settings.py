@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'espace_utc_api.apps.EspaceUtcApiConfig'  # activate the new app
+    'espace_utc_api.apps.EspaceUtcApiConfig'  # activate the new app 'espace_utc_api/apps.py:EspaceUtcApiConfig'
 ]
 
 MIDDLEWARE = [
