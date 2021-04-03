@@ -1,9 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {useEffect} from 'react';
+import {Index} from "./pages/index";
 
 function App() {
+  useEffect(() => {
+    document.title = "URPL"
+  }, []);
+
   return (
     <div className="App">
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Index}/>
+        </Switch>
+      </BrowserRouter>
+    </div>
+  );
+  /*
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -18,8 +33,7 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
-  );
+   */
 }
 
 export default App;
