@@ -82,7 +82,7 @@ from django import forms
 # Create your models here.
 class User(models.Model):
     email = models.EmailField()
-    hash = models.CharField(max_length=100, widget=forms.PasswordInput')  # Password
+    hash = models.CharField(max_length=100, widget=forms.PasswordInput)  # Password
     name = models.CharField(max_length=100, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 ```
@@ -219,3 +219,14 @@ REST_FRAMEWORK = {
 }
 ```
 While there create some contact in the builtin form. In the next section we'll get into React.
+
+
+
+### Add a model 
+
+1. add the class in API/models.py
+2. makemigration & migrate
+3. add serializer in API/serializer.py
+4. add view in API/views.py
+5. add URLs in API/urls.py
+6. make the front !
