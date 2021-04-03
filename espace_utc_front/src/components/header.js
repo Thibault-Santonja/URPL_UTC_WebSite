@@ -7,7 +7,11 @@ import {
     NavbarBrand,
     Nav,
     NavItem,
-    NavLink
+    NavLink,
+    DropdownMenu,
+    DropdownItem,
+    DropdownToggle,
+    UncontrolledDropdown
 } from 'reactstrap';
 
 const Header = () => {
@@ -15,7 +19,6 @@ const Header = () => {
 
     const toggle = () => setIsOpen(!isOpen);
 
-    <img src={logo} className="App-logo" alt="logo" />
     return(
         // remove `expand="md"` from <Navbar ...> to allow toggler
         <>
@@ -30,9 +33,32 @@ const Header = () => {
                         <NavItem>
                             <NavLink href="/polaris">Polaris</NavLink>
                         </NavItem>
-                        <NavItem>
-                            <NavLink href="/team">The team</NavLink>
-                        </NavItem>
+                        <UncontrolledDropdown nav inNavbar >
+                            <DropdownToggle nav caret>
+                                The team
+                            </DropdownToggle>
+                            <DropdownMenu >
+                                <DropdownItem >
+                                    <NavLink href="/team" >Polaris</NavLink>
+                                </DropdownItem>
+                                <DropdownItem divider />
+                                <DropdownItem>
+                                    <NavLink href="/team/AOCS">Attitude and Orbit Control System</NavLink>
+                                </DropdownItem>
+                                <DropdownItem>
+                                    <NavLink href="/team/ASE">Avionics and System Engineering</NavLink>
+                                </DropdownItem>
+                                <DropdownItem>
+                                    <NavLink href="/team/LLT">Launch and Landing Team</NavLink>
+                                </DropdownItem>
+                                <DropdownItem>
+                                    <NavLink href="/team/MED">Mechanical Engineering and Design</NavLink>
+                                </DropdownItem>
+                                <DropdownItem>
+                                    <NavLink href="/team/MFDS">MFDS</NavLink>
+                                </DropdownItem>
+                            </DropdownMenu>
+                        </UncontrolledDropdown>
                         <NavItem>
                             <NavLink href="/contact">Contact</NavLink>
                         </NavItem>
