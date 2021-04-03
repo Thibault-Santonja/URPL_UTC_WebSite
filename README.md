@@ -12,12 +12,14 @@ And if needed (especially if you need to access to some data) run the back too:
 python manage.py runserver
 ```
 
+For easy launch, create some configuration (if you use IntellJ, PyCharm or any other JetBrain products take a look to parts 1.3. and 1.6.)
+
 Project made with Django as back and React as Front (but we can  use another technology)
 
 
 
-## Project creation 
-### Base
+## 1. Project creation 
+### 1.1. Base
 
 Create main folder and move into it
 ```bash
@@ -37,7 +39,7 @@ pip install django djangorestframework
 
 
 
-### Project Structure
+### 1.2. Project Structure
 
 Create a new Django project
 ```bash
@@ -69,7 +71,7 @@ INSTALLED_APPS = [
 
 
 
-### Django model
+### 1.3. Django model
 
 **Take a look to Django fields documentation try to choose the most appropriate field please <3**
 
@@ -98,7 +100,7 @@ With IntellJ, don't hesitate to create a Run Config :
 
 
 
-### Django REST serializers
+### 1.4. Django REST serializers
 Serialization is the act of transforming an object into another data format. After transforming an object we can save it to a file or send it through the network. How do you render a Python class to JSON in a browser? With a Django REST serializer! A serializer converts JSON to objects. 
 
 
@@ -116,7 +118,7 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 
-### Create the views & URLs
+### 1.5. Create the views & URLs
 DANGER : Django is a Model – View – Template framework
 
 In `espace_utc_api/views.py`, create the view :
@@ -166,7 +168,7 @@ And now, run the server !
 
 
 
-### Front with React
+### 1.6. Front with React
 
 For easier beginning : [https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)
 ```bash
@@ -174,13 +176,13 @@ npm init react-app espace_utc_front
 ```
 
 Wait for the installation and next, add the start configuration to launch the front app :
-[](https://puu.sh/Hneoc/0a22a8d27e.png)
+![](https://puu.sh/Hneoc/0a22a8d27e.png)
 
 Next, visit [localhost:3000](http://localhost:3000/)
 
 
 
-### Test
+### 1.7. Test
 
 Please use coverage to test your Django code :
 Install with pip:
@@ -196,7 +198,7 @@ coverage report
 ```
 
 
-### Run server
+### 1.8. Run server
 Don't hesitate to create a configuration or run :
 ```bash
 python manage.py runserver
