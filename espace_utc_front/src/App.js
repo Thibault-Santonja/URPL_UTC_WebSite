@@ -12,6 +12,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <img src={logo} className="App-logo" alt="logo" />
         <Switch>
           <Route exact path="/" component={Index}/>
         </Switch>
