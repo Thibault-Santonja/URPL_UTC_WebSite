@@ -20,8 +20,14 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Index}/>
+          <Route exact path="/news" component={Index}/>
           <Route exact path="/polaris" component={Index}/>
-          <Route exact path="/team" component={Index}/>
+          <Route exact path="/team/AOCS" component={Index}/>
+          <Route exact path="/team/ASE" component={Index}/>
+          <Route exact path="/team/LLT" component={Index}/>
+          <Route exact path="/team/MED" component={Index}/>
+          <Route exact path="/team/MFDS" component={Index}/>
+          <Route exact path="/gallery" component={Index}/>
           <Route exact path="/contact" component={Index}/>
         </Switch>
       </BrowserRouter>

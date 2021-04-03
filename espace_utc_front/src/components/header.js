@@ -27,38 +27,27 @@ const Header = () => {
                     UTC Rocket Propulsion Laboratory
                     <img src={logo} className="App-logo" alt="logo" style={{maxHeight: 50, maxWidth: 100}} />
                 </NavbarBrand>
-                <NavbarToggler onClick={toggle}  className="mr-2" />
+                <NavbarToggler onClick={toggle} className="mr-2" />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav navbar>
                         <NavItem>
-                            <NavLink href="/polaris">Polaris</NavLink>
+                            <NavLink href="/news">News</NavLink>
                         </NavItem>
-                        <UncontrolledDropdown nav inNavbar >
-                            <DropdownToggle nav caret>
-                                The team
-                            </DropdownToggle>
-                            <DropdownMenu >
-                                <DropdownItem >
-                                    <NavLink href="/team" >Polaris</NavLink>
-                                </DropdownItem>
+                        <UncontrolledDropdown nav inNavbar>
+                            <DropdownToggle nav caret>The team</DropdownToggle>
+                            <DropdownMenu>
+                                <DropdownItem tag="a" href="/polaris">Polaris</DropdownItem>
                                 <DropdownItem divider />
-                                <DropdownItem>
-                                    <NavLink href="/team/AOCS">Attitude and Orbit Control System</NavLink>
-                                </DropdownItem>
-                                <DropdownItem>
-                                    <NavLink href="/team/ASE">Avionics and System Engineering</NavLink>
-                                </DropdownItem>
-                                <DropdownItem>
-                                    <NavLink href="/team/LLT">Launch and Landing Team</NavLink>
-                                </DropdownItem>
-                                <DropdownItem>
-                                    <NavLink href="/team/MED">Mechanical Engineering and Design</NavLink>
-                                </DropdownItem>
-                                <DropdownItem>
-                                    <NavLink href="/team/MFDS">MFDS</NavLink>
-                                </DropdownItem>
+                                <DropdownItem tag="a" href="/team/AOCS">Attitude and Orbit Control System</DropdownItem>
+                                <DropdownItem tag="a" href="/team/ASE">Avionics and System Engineering</DropdownItem >
+                                <DropdownItem tag="a" href="/team/LLT">Launch and Landing Team</DropdownItem>
+                                <DropdownItem tag="a" href="/team/MED">Mechanical Engineering and Design</DropdownItem>
+                                <DropdownItem tag="a" href="/team/MFDS">MFDS</DropdownItem>
                             </DropdownMenu>
                         </UncontrolledDropdown>
+                        <NavItem>
+                            <NavLink href="/gallery">Gallery</NavLink>
+                        </NavItem>
                         <NavItem>
                             <NavLink href="/contact">Contact</NavLink>
                         </NavItem>
