@@ -14,10 +14,23 @@
     Yale Blue           :   #1f487e   |                       |   (75, 43, 0, 51)
     Alice Blue          :   #eff2fa   |   (239, 242, 250)     |   (4, 3, 0, 2)
     Rose Madder         :   #D94040   |   (217, 64, 64)       |   (0, 71, 71, 15)
+
+    font (font-squirel):
+        - NotoSans
+        - exo2
+        - Hind-Siliguri
+        - Kanit
+        - Khula
+        - Sintony
+        - OpenSans
+        - NunitoSans
  */
 
-/* --------------------- */
-/* --- Color palette --- */
+/* ----------------------- */
+/* --- Graphical chart --- */
+
+@font-face {font-family: "Segoe UI Light"}
+
 :root {
     --rich-black-fogra-29:  #060b0fff;
     --prussian-blue:        #1e344eff;
@@ -27,8 +40,10 @@
     --urpl-blue:            #3d5da7ff;  /* = bdazzled blue */
     --urpl-grey:            #595959ff;  /* = davys grey */
     --urpl-red:             #d94040ff;  /* = rose madder */
-}
 
+    --text-font:            "Segoe UI Light";
+    --title-font:           "Noto Sans";
+}
 
 /* ------------------- */
 /* --- Header menu --- */
@@ -55,7 +70,7 @@
     flex-direction: column;
     align-content: space-between;
 }
-.page p {margin: 20px 10% 30px 10%}
+.page article {margin: 20px 10% 30px 10%}
 
 
 /* -------------- */
@@ -84,10 +99,15 @@ footer {
 .footer_style a {
     color: var(--alice-blue);
 }
+
+@font-face {font-family: ""}
 .footer_style h4 {
     width: 100%;
     font-variant: small-caps;
+    /*font-family: var(--title-font);*/
 }
+/*.footer_style p, .footer_style li {font-family: var(--text-font)}*/
+
 .footer_style img {max-height: 50px}
 .footer_contact li {padding-bottom: 10px}
 .footer_copyright {color: var(--united-nations-blue)}
