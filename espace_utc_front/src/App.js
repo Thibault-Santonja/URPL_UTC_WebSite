@@ -12,6 +12,7 @@ import {LLT} from "./pages/team/LLT";
 import {MED} from "./pages/team/MED";
 import {MFDS} from "./pages/team/MFDS";
 import {Header} from "./components/header";
+import {Footer} from "./components/footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './graphicChart.css';
 /*
@@ -41,6 +42,7 @@ function App() {
           <Route exact path="/contact" component={Contact}/>
         </Switch>
       </BrowserRouter>
+      <footer><Footer className="AppFooter"/></footer>
     </div>
   );
 }

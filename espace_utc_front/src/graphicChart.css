@@ -56,3 +56,38 @@
     align-content: space-between;
 }
 .page p {margin: 20px 10% 30px 10%}
+
+
+/* -------------- */
+/* --- Footer --- */
+
+.App {
+    height:100vh;
+    margin:0;
+    display:flex;
+    flex-direction:column;
+}
+footer {
+    margin-top:auto;
+    width:100%;
+}
+.footer_style {
+    background-color: var(--united-nations-blue);
+    color: var(--alice-blue);
+    padding: 20px 20% 10px 20%;
+    text-align: left;
+}
+.footer_style ul {
+    padding: 0;
+    list-style-type: none;
+}
+.footer_style a {
+    color: var(--alice-blue);
+}
+.footer_style h4 {
+    width: 100%;
+    font-variant: small-caps;
+}
+.footer_style img {max-height: 50px}
+.footer_contact li {padding-bottom: 10px}
+.footer_copyright {color: var(--united-nations-blue)}
