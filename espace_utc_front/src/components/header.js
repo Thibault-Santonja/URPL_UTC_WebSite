@@ -32,6 +32,9 @@ const Header = () => {
                 </NavbarBrand>
                 <Nav navbar className="ml-auto" >
                     <NavItem className={navItemClass}>
+                        <NavLink href="/" className={navLinkClass}>URPL</NavLink>
+                    </NavItem>
+                    <NavItem className={navItemClass}>
                         <NavLink href="/news" className={navLinkClass}>News</NavLink>
                     </NavItem>
                     <Dropdown className={navItemClass} isOpen={isOpen} onMouseEnter={() => setIsOpen(true)}
