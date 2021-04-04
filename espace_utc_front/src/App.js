@@ -13,6 +13,7 @@ import {MED} from "./pages/team/MED";
 import {MFDS} from "./pages/team/MFDS";
 import {Header} from "./components/header";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './graphicChart.css';
 /*
     npm install --save bootstrap
     npm install --save reactstrap react react-dom

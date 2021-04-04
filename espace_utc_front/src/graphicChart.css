@@ -1,0 +1,58 @@
+/*
+    Take a look to the palette : https://coolors.co/060b0f-1e344e-6095da-eff2fa-d94040
+
+    name                :   hex       |   rvb                 |   cmyk
+    Oxford Blue         :   #020223   |   (2, 2, 35)          |   (94, 94, 0, 86)
+    Russian Violet      :   #221B57   |   (34, 27, 87)        |   (61, 69, 0, 66)
+    Lavender Floral     :   #A189D8   |   (161, 137, 216)     |   (25, 37, 0, 15)
+    Purpureus           :   #884EA1   |   (136, 78, 161)      |   (16, 52, 0, 37)
+    Russian Violet      :   #320446   |   (50, 4, 70)         |   (29, 94, 0, 73)
+    Rich Black FOGRA 29 :   #060b0f   |   (6, 11, 15)         |   (60, 27, 0, 94)
+    Prussian Blue       :   #1E344E   |   (30, 52, 78)        |   (62, 33, 0, 69)
+    Space Cadet         :   #18274e   |                       |   (69, 50, 0, 69)
+    united Nations Blue :   #6095DA   |   (96, 149, 218)      |   (56, 32, 0, 15)
+    Yale Blue           :   #1f487e   |                       |   (75, 43, 0, 51)
+    Alice Blue          :   #eff2fa   |   (239, 242, 250)     |   (4, 3, 0, 2)
+    Rose Madder         :   #D94040   |   (217, 64, 64)       |   (0, 71, 71, 15)
+ */
+
+/* --------------------- */
+/* --- Color palette --- */
+:root {
+    --rich-black-fogra-29:  #060b0fff;
+    --prussian-blue:        #1e344eff;
+    --united-nations-blue:  #6095daff;
+    --alice-blue:           #eff2faff;
+
+    --urpl-blue:            #3d5da7ff;  /* = bdazzled blue */
+    --urpl-grey:            #595959ff;  /* = davys grey */
+    --urpl-red:             #d94040ff;  /* = rose madder */
+}
+
+
+/* ------------------- */
+/* --- Header menu --- */
+
+.menu_nav_link {
+    color: var(--alice-blue);
+    text-decoration: none;
+    font-size: 20px;
+    width: 20%;
+}
+.menu_nav {background-color: var(--rich-black-fogra-29)}
+.menu_nav_link:hover {color: var(--united-nations-blue)}
+
+.menu_dropdown {background-color: var(--prussian-blue)}
+.menu_dropdown_item {color: var(--alice-blue)}
+
+/* ------------------ */
+/* --- Base pages --- */
+
+.page {
+    margin: 10px 10% 10px 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: space-between;
+}
+.page p {margin: 20px 10% 30px 10%}
