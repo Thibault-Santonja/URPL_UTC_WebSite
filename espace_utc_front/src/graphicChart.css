@@ -71,9 +71,27 @@
     align-content: space-between;
 }
 .page article {margin: 20px 10% 30px 10%}
+.page img {width: 100%; height: 100%}
+.page_title {
+    margin: 20px 0% 50px 0%;
+    color: var(--united-nations-blue);
+    font-variant: small-caps;
+    font-family: var(--title-font);
+}
+.card_title {
+    color: var(--united-nations-blue);
+    font-family: var(--title-font);
+}
+.card_container {
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.card_container .card_gallery {margin-bottom: 30px}
+.card_container .card_gallery button {background-color: var(--united-nations-blue)}
 
-
-/* -------------- */
+    /* -------------- */
 /* --- Footer --- */
 
 .App {
@@ -104,9 +122,9 @@ footer {
 .footer_style h4 {
     width: 100%;
     font-variant: small-caps;
-    /*font-family: var(--title-font);*/
+    font-family: var(--title-font);
 }
-/*.footer_style p, .footer_style li {font-family: var(--text-font)}*/
+.footer_style p, .footer_style li {font-family: var(--text-font)}
 
 .footer_style img {max-height: 50px}
 .footer_contact li {padding-bottom: 10px}
