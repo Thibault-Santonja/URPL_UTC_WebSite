@@ -29,7 +29,7 @@ const Header = () => {
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle} className="mr-2" />
                 <Collapse isOpen={isOpen} navbar>
-                    <Nav navbar>
+                    <Nav navbar className="ml-auto">
                         <NavItem>
                             <NavLink href="/news">News</NavLink>
                         </NavItem>
