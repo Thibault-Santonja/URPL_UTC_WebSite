@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {FormGroup, Col, Label, Form, Input, Row, Button} from "reactstrap";
+import { AvForm, AvField } from 'availity-reactstrap-validation';
 
 
 class Contact extends Component {
@@ -10,7 +11,7 @@ class Contact extends Component {
                 <h2 className={'page_title'}>Contact</h2>
                 <Form>
                     <FormGroup>
-                        <Label for="Name">Name</Label>
+                        <Label for="Name">Name *</Label>
                         <Row>
                             <Col md={6}>
                                 <FormGroup>
@@ -25,16 +26,16 @@ class Contact extends Component {
                         </Row>
                     </FormGroup>
                     <FormGroup>
-                        <Label for="Email">Email</Label>
-                        <Input type="email" name="email" id="email" placeholder="Email" />
+                        <Label for="Email">Email Address *</Label>
+                        <Input type="email" name="email" id="email" placeholder="Your email" />
                     </FormGroup>
                     <FormGroup>
-                        <Label for="Subject">Subject</Label>
-                        <Input type="text" name="subject" id="subject" placeholder="Subject" />
+                        <Label for="Subject">Subject *</Label>
+                        <Input type="text" name="subject" id="subject" placeholder="Your message subject" />
                     </FormGroup>
                     <FormGroup>
-                        <Label for="Message">Message</Label>
-                        <Input type="textarea" name="message" id="message" placeholder="Message" />
+                        <Label for="Message">Message *</Label>
+                        <Input type="textarea" name="message" id="message" placeholder="Your message" />
                     </FormGroup>
                     <Button>Submit</Button>
                 </Form>

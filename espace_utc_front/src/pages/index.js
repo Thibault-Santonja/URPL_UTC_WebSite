@@ -21,7 +21,7 @@ class Index extends Component {
                 </article>
                 <article>
                     <Row>
-                        <Col md={4}><img src={galaxy}/></Col>
+                        <Col md={4}><img src={galaxy} alt={'A galaxy'}/></Col>
                         <Col md={8}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper ligula pellentesque
                             odio convallis, ut pellentesque lacus laoreet. Integer dapibus diam sed magna imperdiet, eu
                             ultrices erat aliquam. Maecenas suscipit venenatis vestibulum. Pellentesque purus ipsum,
@@ -48,7 +48,7 @@ class Index extends Component {
                             taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam ut consequat
                             urna, in tincidunt justo. Sed hendrerit leo lacus, dictum posuere est ullamcorper vel. Duis laoreet
                             est eu auctor volutpat. Aliquam felis magna, varius varius porta in, pretium non massa.</Col>
-                        <Col md={4}><img src={galaxy}/></Col>
+                        <Col md={4}><img src={galaxy} alt={'A galaxy'}/></Col>
                     </Row>
                 </article>
             </div>

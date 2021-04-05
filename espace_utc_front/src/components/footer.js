@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
     Row,
     Col
@@ -20,11 +20,11 @@ const Footer = () => {
                         <h4>Links</h4>
                         <ul>
                             <li className="list-unstyled">
-                                <img src={instagram}/>
-                                <a href="#">Instagram</a>
+                                <img src={instagram} alt={'Instagram Logo'}/>
+                                <a href="https://www.instagram.com/utcompiegne">Instagram</a>
                             </li>
                             <li className="list-unstyled">
-                                <img src={youtube}/>
+                                <img src={youtube} alt={'Youtube Logo'}/>
                                 <a href="https://www.youtube.com/channel/UCBGBLGHoft6vqKS9sQFXOxw">Youtube</a>
                             </li>
                         </ul>
@@ -33,7 +33,7 @@ const Footer = () => {
                         <Row>
                             <h4>Contact</h4>
                             <ul className={'footer_contact'}>
-                                <li className="list-unstyled">mail : <a href="#">contact.urpl</a></li>
+                                <li className="list-unstyled">mail : <a href="contact@urpl.space">contact.urpl</a></li>
                                 <li className="list-unstyled"><a href="https://www.utc.fr/">Université de Technologie de Compiègne (France)</a></li>
                             </ul>
                         </Row>

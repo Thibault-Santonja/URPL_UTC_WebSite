@@ -64,7 +64,6 @@
 /* --- Base pages --- */
 
 .page {
-    margin: 10px 10% 10px 10%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -72,8 +71,21 @@
 }
 .page article {margin: 20px 10% 30px 10%}
 .page img {width: 100%; height: 100%}
+.page form {margin: 20px 0 20px 0}
+.page form button {
+    width: 90%;
+    margin: 20px 0 20px 0;
+    background-color: var(--united-nations-blue);
+    border: var(--alice-blue);
+}
 .page_title {
-    margin: 20px 0% 50px 0%;
+    background-image: url("./assets/imgs/earth-horizon-from-space.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 80%;
+    padding: 20px 0 20px 0;
+    margin: 20px 0 20px 0;
     color: var(--united-nations-blue);
     font-variant: small-caps;
     font-family: var(--title-font);
@@ -89,7 +101,8 @@
     flex-wrap: wrap;
 }
 .card_container .card_gallery {margin-bottom: 30px}
-.card_container .card_gallery button {background-color: var(--united-nations-blue)}
+.card_container .card_gallery button {border: var(--alice-blue); background-color: var(--united-nations-blue)}
+.card_gallery img {margin-top: 0}
 
     /* -------------- */
 /* --- Footer --- */
