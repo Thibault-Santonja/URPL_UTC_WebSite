@@ -5,9 +5,12 @@ class MFDS extends Component {
 
     render() {
         return(
-            <>
-                <h1>MFDS</h1>
-            </>
+            <div className={'page'}>
+                <h2 className={'page_title'}>Multiphysics Fluids Dynamic Simulation</h2>
+                <article>
+                    Le projet polaris est ...
+                </article>
+            </div>
         )
     };
 

@@ -5,9 +5,12 @@ class MED extends Component {
 
     render() {
         return(
-            <>
-                <h1>MED</h1>
-            </>
+            <div className={'page'}>
+                <h2 className={'page_title'}>Mechanical Engineering and Design</h2>
+                <article>
+                    Le projet polaris est ...
+                </article>
+            </div>
         )
     };
 

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import YouTube from 'react-youtube';
-import {Col, Row} from "reactstrap";
+import {Col, Row, Table} from "reactstrap";
 import galaxy from '../assets/Andromeda_Galaxy.jpg';
 
 
@@ -9,6 +9,17 @@ class Index extends Component {
     render() {
         return(
             <div className={'page'}>
+                <div className={'welcome'}>
+                    <Table>
+                        <Col md={1}></Col>
+                        <Col md={4}>
+                            <Row><h2>UTC Rocket Propulsion Laboratory</h2></Row>
+                            <Row><p>Student Rocketry Team of the Technological University of Compiègne (UTC), France, that aims space</p></Row>
+                        </Col>
+                        <Col md={7}></Col>
+                    </Table>
+
+                </div>
                 <article> {/*!--intro--*/}
                     <p>Étudiants passionnés de l'Université de Technologie de Compiègne (UTC) dans les Hauts-de-France,
                         nous nous sommes lancés depuis 2019 dans l'aventure spatiale.</p>

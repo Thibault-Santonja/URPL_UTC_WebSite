@@ -15,8 +15,6 @@ import {
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-
-
     // Style
     const navItemClass = 'mr-2 ml-2'
     const navLinkClass = 'menu_nav_link'
@@ -47,7 +45,7 @@ const Header = () => {
                             <DropdownItem tag="a" href="/team/ASE" className={navDropdownItem}>Avionics and System Engineering</DropdownItem >
                             <DropdownItem tag="a" href="/team/LLT" className={navDropdownItem}>Launch and Landing Team</DropdownItem>
                             <DropdownItem tag="a" href="/team/MED" className={navDropdownItem}>Mechanical Engineering and Design</DropdownItem>
-                            <DropdownItem tag="a" href="/team/MFDS" className={navDropdownItem}>MFDS</DropdownItem>
+                            <DropdownItem tag="a" href="/team/MFDS" className={navDropdownItem}>Multiphysics Fluids Dynamic Simulation</DropdownItem>
                         </DropdownMenu>
                     </Dropdown >
                     <NavItem className={navItemClass}>

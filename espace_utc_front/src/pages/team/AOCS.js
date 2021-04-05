@@ -5,9 +5,12 @@ class AOCS extends Component {
 
     render() {
         return(
-            <>
-                <h1>AOCS</h1>
-            </>
+            <div className={'page'}>
+                <h2 className={'page_title'}>Attitude and Orbit Control System</h2>
+                <article>
+                    Le projet polaris est ...
+                </article>
+            </div>
         )
     };
 

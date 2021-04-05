@@ -5,9 +5,12 @@ class LLT extends Component {
 
     render() {
         return(
-            <>
-                <h1>LLT</h1>
-            </>
+            <div className={'page'}>
+                <h2 className={'page_title'}>Launch and Landing Team</h2>
+                <article>
+                    Le projet polaris est ...
+                </article>
+            </div>
         )
     };
 

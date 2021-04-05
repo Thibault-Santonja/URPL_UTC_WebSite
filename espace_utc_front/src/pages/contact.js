@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {FormGroup, Col, Label, Form, Input, Row, Button} from "reactstrap";
-import { AvForm, AvField } from 'availity-reactstrap-validation';
 
 
 class Contact extends Component {

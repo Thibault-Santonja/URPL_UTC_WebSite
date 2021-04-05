@@ -86,7 +86,7 @@
     width: 80%;
     padding: 20px 0 20px 0;
     margin: 20px 0 20px 0;
-    color: var(--united-nations-blue);
+    color: var(--alice-blue);
     font-variant: small-caps;
     font-family: var(--title-font);
 }
@@ -101,10 +101,53 @@
     flex-wrap: wrap;
 }
 .card_container .card_gallery {margin-bottom: 30px}
-.card_container .card_gallery button {border: var(--alice-blue); background-color: var(--united-nations-blue)}
+.card_container .card_gallery button {
+    border: var(--alice-blue);
+    background-color: var(--united-nations-blue)}
 .card_gallery img {margin-top: 0}
 
-    /* -------------- */
+/* ------------------ */
+/* --- Index page --- */
+.welcome {
+    height: 93vh;
+    width: 100%;
+    background-image: url("./assets/imgs/welcome-image.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.welcome table {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.welcome table h2 {
+    font-size: 40px;
+    color: var(--alice-blue);
+    font-family: var(--title-font);
+    margin-bottom: 5%;
+}
+.welcome table p {
+    font-size: 20px;
+    color: var(--alice-blue);
+    font-family: var(--text-font);
+}
+
+/* -------------------- */
+/* --- Polaris page --- */
+
+.polaris_teams {
+    display: flex;
+    align-items: center;
+}
+.polaris_teams:not(:last-child) {padding-bottom: 20px}
+/*  .polaris_teams:last-child {padding-bottom: 0}  */
+
+.polaris_teams_presentation {height: 100%}
+
+
+/* -------------- */
 /* --- Footer --- */
 
 .App {
@@ -116,6 +159,9 @@
 footer {
     margin-top:auto;
     width:100%;
+    /* FIXME c'est dégueux mais problème de décalage de page que je ne comprend pas...*/
+    padding-right: 15px;
+    /* TODO */
 }
 .footer_style {
     background-color: var(--united-nations-blue);
