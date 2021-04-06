@@ -132,7 +132,27 @@
     font-size: 20px;
     color: var(--alice-blue);
     font-family: var(--text-font);
+    /*-webkit-text-stroke: 0.25px var(--prussian-blue);*/
 }
+.welcome_button_row {
+    display: inline-block;
+    width: 40%;
+}
+.welcome_button {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0 20px 0;
+    background-color:  var(--prussian-blue);
+    border: var(--alice-blue);
+}
+
+.welcome_numbers {height: 93vh}
+.welcome_numbers h3, .welcome_numbers h4 {
+    font-size: 40px;
+    font-family: var(--title-font);
+}
+.welcome_numbers h3 {margin: 100px 0 30px 0}
+
 
 /* -------------------- */
 /* --- Polaris page --- */
