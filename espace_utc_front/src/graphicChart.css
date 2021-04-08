@@ -65,6 +65,8 @@
 
 /* ------------------ */
 /* --- Base pages --- */
+.title_font {font-family: var(--title-font)}
+.text_font {font-family: var(--text-font)}
 
 .light_blue_button {
     background-color:  var(--united-nations-blue);
@@ -72,8 +74,12 @@
     border: var(--alice-blue);
     width: 50%;
 }
-.space_separation {height: 5%}
-.space_separation_big {height: 10%}
+.dark_blue_button {
+    background-color:  var(--prussian-blue);
+    border: var(--alice-blue);
+}
+.space_separation {height: 5vh}
+.space_separation_big {height: 10vh}
 h10 {
     font-size: 12px;
     font-style: italic;
@@ -85,6 +91,18 @@ h10 {
     align-items: center;
     flex-direction: column;
     align-content: space-between;
+}
+.align_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.space_wallpaper {
+    background-image: url("./assets/imgs/2020_cannes_5201.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--alice-blue);
 }
 .page article {margin: 20px 10% 30px 10%}
 .page img {width: 100%; height: 100%}
@@ -98,7 +116,7 @@ h10 {
 .page_title {
     background-image: url("./assets/imgs/earth-horizon-from-space.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     width: 80%;
     padding: 20px 0 20px 0;
@@ -144,13 +162,11 @@ h10 {
 .welcome table h2 {
     font-size: 40px;
     color: var(--alice-blue);
-    font-family: var(--title-font);
     margin-bottom: 5%;
 }
 .welcome table p {
     font-size: 20px;
     color: var(--alice-blue);
-    font-family: var(--text-font);
     /*-webkit-text-stroke: 0.25px var(--prussian-blue);*/
 }
 .welcome_button_row {
@@ -161,16 +177,27 @@ h10 {
     text-align: center;
     width: 100%;
     margin: 20px 0 20px 0;
-    background-color:  var(--prussian-blue);
-    border: var(--alice-blue);
 }
-.welcome_numbers {height: 100vh}
-.welcome_numbers h3 {
+.index_page {width: 100%}
+.index_page h3 {
     font-size: 40px;
     font-weight: bolder;
     font-family: var(--title-font);
 }
-
+.index_page .space_wallpaper {
+    padding: 5% 0 5% 0;
+}
+.box_style_image {
+    background-color: var(--alice-blue);
+    border: 10px solid;
+    border-image-source: url("./assets/imgs/earth-horizon-from-space.jpg");
+    border-image-slice: 60 30;
+}
+.box_style_shadow {
+    background-color: var(--alice-blue);
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 0px 0px 5px 2px var(--prussian-blue);
+}
 
 /* -------------------- */
 /* --- Polaris page --- */
