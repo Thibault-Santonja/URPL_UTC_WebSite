@@ -34,6 +34,21 @@ const tmp_news = [
         'date': randomDate(new Date(2019, 0, 1), new Date()),
         'content': 'With supporting text below as a natural lead-in to additional content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
     },
+    {
+        'title': 'Vincent Martin a publier sa TX.',
+        'date': randomDate(new Date(2019, 0, 1), new Date()),
+        'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper ligula pellentesque odio convallis, ut pellentesque lacus laoreet. Integer dapibus diam sed magna imperdiet, eu ultrices erat aliquam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper ligula pellentesque odio convallis, ut pellentesque lacus laoreet. Integer dapibus diam sed magna imperdiet, eu ultrices erat aliquam.'
+    },
+    {
+        'title': 'Lancement du site web !',
+        'date': randomDate(new Date(2019, 0, 1), new Date()),
+        'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dapibus diam sed magna imperdiet, eu ultrices erat aliquam.'
+    },
+    {
+        'title': 'MBSE avec Capella.',
+        'date': randomDate(new Date(2019, 0, 1), new Date()),
+        'content': 'With supporting text below as a natural lead-in to additional content. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    },
 ]
 
 
