@@ -1,5 +1,5 @@
 """
-WSGI config for espace_utc_app project.
+WSGI config for urpl_app project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'espace_utc_app.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'urpl_app.settings')
 
 application = get_wsgi_application()
