@@ -21,29 +21,45 @@ class Index extends Component {
                     </Table>
                 </div>
                 <Container className={'welcome_numbers'}>
+                    <Row className={"space_separation_big"}></Row>
                     <Row xs="1">
                         <h3>Some students passionate by space</h3>
                     </Row>
+
+                    <Row className={"space_separation"}></Row>
                     <Row xs="3">
-                        <Col><h4>20+</h4> Students</Col>
-                        <Col><h4>5</h4> Teams</Col>
-                        <Col>Since <h4>2019</h4></Col>
+                        <Col><h3>20+</h3> Students</Col>
+                        <Col><h3>5</h3> Teams</Col>
+                        <Col>Since <h3>2019</h3></Col>
                     </Row>
+                    <Row className={"space_separation_big"}></Row>
                     <Row xs="1">
                         <h3>Who we are ?</h3>
                     </Row>
                     <Row xs="1">
-                        <p>Étudiants passionnés de l'Université de Technologie de Compiègne (UTC) dans les Hauts-de-France,
-                            nous nous sommes lancés depuis 2019 dans l'aventure spatiale.</p>
-                        <p>Notre projet : faire un moteur hybride et tenter d'atteindre l'espace grace à nos connaissances,
-                            notre esprit et envie d'innovations, notre curiosité et notre capacité d'apprentissage !</p>
+                        <p>Space passionated students from the University of Technology of Compiègne (UTC) in the
+                            Hauts-de-France (France), we have embarked since 2019 on the adventure of creating an engine
+                            and testing it in a launcher.</p>
+                        <p><b>Our project</b>: to make a hybrid engine and try to reach space thanks to our knowledge,
+                            our desire for innovation, our curiosity and our ability to learn!</p>
+                    </Row>
+                    <Row className={"space_separation"}></Row>
+                    <Row xs="2">
+                        <Col>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper ligula pellentesque
+                                odio convallis, ut pellentesque lacus laoreet. Integer dapibus diam sed magna imperdiet, eu
+                                ultrices erat aliquam.
+                            </p>
+                            <Button href="/polaris" className={"light_blue_button"}>About us</Button>
+                        </Col>
+                        <Col>
+                            <>
+                                <YouTube className={"youtube_video"} videoId={"rwt5GhylwOA"}/>
+                                <h10>Vidéo de présentation de la filière aérospatiale de l'Université de Technologie de Compiègne.</h10>
+                            </>
+                        </Col>
                     </Row>
                 </Container>
-
-                <article> {/*!--intro video --*/}
-                    <YouTube videoId={"rwt5GhylwOA"}/>
-                    <p>Vidéo de présentation de la filière aérospatiale de l'Université de Technologie de Compiègne.</p>
-                </article>
                 <article>
                     <Row>
                         <Col md={7}><img src={galaxy} alt={'A galaxy'}/></Col>
