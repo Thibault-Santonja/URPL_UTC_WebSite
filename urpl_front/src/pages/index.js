@@ -68,7 +68,7 @@ class Index extends Component {
                         <p>Space passionated students from the University of Technology of Compiègne (UTC) in the
                             Hauts-de-France (France), we have embarked since 2019 on the adventure of creating an engine
                             and testing it in a launcher.</p>
-                        </Row>
+                    </Row>
                     <Row className={"space_separation"}></Row>
 
                     {/* ----- GOAL PART ----- */}
@@ -102,105 +102,110 @@ class Index extends Component {
                     <Row className={"space_separation_big"}></Row>
 
                     {/* ----- ICONS PART ----- */}
-                    <Row>
-                        <Col md={6}>
-                            <Row md={1} className={"box_style_shadow"}>
-                                <Row md={1}><h4>Our teams :</h4></Row>
+                    {/*
+                        <Row>
+                            <Col md={6}>
+                                <Row md={1} className={"box_style_shadow"}>
+                                    <Row md={1}><h4>Our teams :</h4></Row>
+                                    <Row md={1}>
+                                        <Col md={4}>
+                                            <div>
+                                                <img src={satIcon} alt={'random icon'}/>
+                                                <p>AOCS</p>
+                                            </div>
+                                        </Col>
+                                        <Col md={4}>
+                                            <div>
+                                                <img src={satIcon} alt={'random icon'}/>
+                                                <p>ASE</p>
+                                            </div>
+                                        </Col>
+                                        <Col md={4}>
+                                            <div>
+                                                <img src={satIcon} alt={'random icon'}/>
+                                                <p>LLT</p>
+                                            </div>
+                                        </Col>
+                                        <Col md={4}>
+                                            <div>
+                                                <img src={satIcon} alt={'random icon'}/>
+                                                <p>MED</p>
+                                            </div>
+                                        </Col>
+                                        <Col md={4}>
+                                            <div>
+                                                <img src={satIcon} alt={'random icon'}/>
+                                                <p>MFDS</p>
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </Row>
+                                <Row className={"space_separation"}></Row>
+                                <Row md={1} className={"box_style_shadow"}>
+                                    <Col>
+                                        <Row md={1}><h4>Our library :</h4></Row>
+                                        <Row md={1}><p>
+                                            pqfnslen zqlk h ihqmkzj hqkjh kqjhg hge jhegjhgq l l gfkfkgfgf hf k f f hg h
+                                            fkfkyfkhf f
+                                            pqfnslen zqlk h ihqmkzj hqkjh kqjhg hge jhegjhgq l l gfkfkgfgf hf k f f hg h
+                                            fkfkyfkhf f
+                                            pqfnslen zqlk h ihqmkzj hqkjh kqjhg hge jhegjhgq l l gfkfkgfgf hf k f f hg h
+                                            fkfkyfkhf f
+                                            pqfnslen zqlk h ihqmkzj hqkjh kqjhg hge jhegjhgq l l gfkfkgfgf hf k f f hg h
+                                            fkfkyfkhf f
+                                        </p></Row>
+                                    </Col>
+                                </Row>
+                            </Col>
+                            <Col md={6} className={"box_style_image"}>
+                                <Row md={1}><h4>Our partners :</h4></Row>
                                 <Row md={1}>
                                     <Col md={4}>
                                         <div>
                                             <img src={satIcon} alt={'random icon'}/>
-                                            <p>AOCS</p>
+                                            <p>Kerbal Space Agency</p>
                                         </div>
                                     </Col>
                                     <Col md={4}>
                                         <div>
                                             <img src={satIcon} alt={'random icon'}/>
-                                            <p>ASE</p>
+                                            <p>National Alien Space Agency</p>
                                         </div>
                                     </Col>
                                     <Col md={4}>
                                         <div>
                                             <img src={satIcon} alt={'random icon'}/>
-                                            <p>LLT</p>
+                                            <p>Moon Lander Systems</p>
                                         </div>
                                     </Col>
                                     <Col md={4}>
                                         <div>
                                             <img src={satIcon} alt={'random icon'}/>
-                                            <p>MED</p>
+                                            <p>Very Extremely Big Deep Space Company</p>
                                         </div>
                                     </Col>
                                     <Col md={4}>
                                         <div>
                                             <img src={satIcon} alt={'random icon'}/>
-                                            <p>MFDS</p>
+                                            <p>666G World Network</p>
+                                        </div>
+                                    </Col>
+                                    <Col md={4}>
+                                        <div>
+                                            <img src={satIcon} alt={'random icon'}/>
+                                            <p>Blue Incorporation</p>
+                                        </div>
+                                    </Col>
+                                    <Col md={4}>
+                                        <div>
+                                            <img src={satIcon} alt={'random icon'}/>
+                                            <p>GitS & Cie</p>
                                         </div>
                                     </Col>
                                 </Row>
-                            </Row>
-                            <Row className={"space_separation"}></Row>
-                            <Row md={1} className={"box_style_shadow"}>
-                                <Col>
-                                    <Row md={1}><h4>Our library :</h4></Row>
-                                    <Row md={1}><p>
-                                        pqfnslen zqlk h ihqmkzj hqkjh kqjhg hge jhegjhgq  l l   gfkfkgfgf hf k f f hg h fkfkyfkhf  f
-                                        pqfnslen zqlk h ihqmkzj hqkjh kqjhg hge jhegjhgq  l l   gfkfkgfgf hf k f f hg h fkfkyfkhf  f
-                                        pqfnslen zqlk h ihqmkzj hqkjh kqjhg hge jhegjhgq  l l   gfkfkgfgf hf k f f hg h fkfkyfkhf  f
-                                        pqfnslen zqlk h ihqmkzj hqkjh kqjhg hge jhegjhgq  l l   gfkfkgfgf hf k f f hg h fkfkyfkhf  f
-                                    </p></Row>
-                                </Col>
-                            </Row>
-                        </Col>
-                        <Col md={6} className={"box_style_image"}>
-                            <Row md={1}><h4>Our partners :</h4></Row>
-                            <Row md={1}>
-                                <Col md={4}>
-                                    <div>
-                                        <img src={satIcon} alt={'random icon'}/>
-                                        <p>Kerbal Space Agency</p>
-                                    </div>
-                                </Col>
-                                <Col md={4}>
-                                    <div>
-                                        <img src={satIcon} alt={'random icon'}/>
-                                        <p>National Alien Space Agency</p>
-                                    </div>
-                                </Col>
-                                <Col md={4}>
-                                    <div>
-                                        <img src={satIcon} alt={'random icon'}/>
-                                        <p>Moon Lander Systems</p>
-                                    </div>
-                                </Col>
-                                <Col md={4}>
-                                    <div>
-                                        <img src={satIcon} alt={'random icon'}/>
-                                        <p>Very Extremely Big Deep Space Company</p>
-                                    </div>
-                                </Col>
-                                <Col md={4}>
-                                    <div>
-                                        <img src={satIcon} alt={'random icon'}/>
-                                        <p>666G World Network</p>
-                                    </div>
-                                </Col>
-                                <Col md={4}>
-                                    <div>
-                                        <img src={satIcon} alt={'random icon'}/>
-                                        <p>Blue Incorporation</p>
-                                    </div>
-                                </Col>
-                                <Col md={4}>
-                                    <div>
-                                        <img src={satIcon} alt={'random icon'}/>
-                                        <p>GitS & Cie</p>
-                                    </div>
-                                </Col>
-                            </Row>
-                        </Col>
-                    </Row>
-                    <Row className={"space_separation_big"}></Row>
+                            </Col>
+                        </Row>
+                        <Row className={"space_separation_big"}></Row>
 
                     {/* ----- NEWS PART ----- */}
                     <Row>
