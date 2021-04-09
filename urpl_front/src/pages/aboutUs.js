@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Button, Col, Container, DropdownItem, Row} from "reactstrap";
+import {Button, Col, Container, Row} from "reactstrap";
 
 
 class AboutUs extends Component {

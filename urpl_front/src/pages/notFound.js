@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Button, Col, Container, Row} from "reactstrap";
+import {Button, Col, Row} from "reactstrap";
 import error404 from "../assets/imgs/404-stage.svg"
 
 
@@ -14,7 +14,7 @@ class NotFound extends Component {
                         <Col md={3}></Col>
                         <Col md={6}>
                             <Row>
-                                <Col md={6}><img src={error404} style={{width: "100%"}}/></Col>
+                                <Col md={6}><img src={error404} style={{width: "100%"}} alt={"404 error"}/></Col>
                                 <Col md={6}>
                                     <h2 className={"title_font"}>
                                         Sorry, page not found</h2>

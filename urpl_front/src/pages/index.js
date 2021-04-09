@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import YouTube from 'react-youtube';
 import {Button, Col, Row, Table, Container, Card, CardTitle, CardText} from "reactstrap";
 import rocketModel from '../assets/imgs/modelisation.png';
-import satIcon from '../assets/imgs/satallite_icon100.png';
 
 
 function randomDate(start, end) {
