@@ -13,5 +13,5 @@ class Contact(models.Model):
     sender = models.CharField(max_length=127)
     mail = models.EmailField()
     subject = models.CharField(max_length=127)
-    body = models.CharField()
+    body = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
