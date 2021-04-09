@@ -1,7 +1,11 @@
 import React, {Component} from 'react';
-import YouTube from 'react-youtube';
 import {Button, Col, Row, Table, Container, Card, CardTitle, CardText, CardSubtitle} from "reactstrap";
+import YouTube from 'react-youtube';
 import rocketModel from '../assets/imgs/modelisation.png';
+import rocketModel3Dgltf from '../assets/rocket_quick.gltf';
+import rocketModel3D from '../assets/Night_Drive_Space_spaceship.glb';
+import '@google/model-viewer';
+
 
 
 function randomDate(start, end) {
@@ -34,30 +38,30 @@ class Index extends Component {
                 {/* ----- AWESOME WELCOME PART ----- */}
                 <div className={'welcome'}>
                     <Table>
-                        <Col md={1}></Col>
+                        <Col md={1}/>
                         <Col md={4}>
                             <Row><h2 className={"title_font"}>UTC Rocket Propulsion Laboratory</h2></Row>
                             <Row><p className={"text_font"}>Student Rocketry Team of the Technological University of Compiègne (UTC), France, that aims space</p></Row>
                             <Row className={'welcome_button_row'}><Button className={'welcome_button dark_blue_button'} href="/polaris">See more</Button></Row>
                         </Col>
-                        <Col md={7}></Col>
+                        <Col md={7}/>
                     </Table>
                 </div>
 
                 <Container className={'index_page'}>
-                    <Row className={"space_separation_big"}></Row>
+                    <Row className={"space_separation_big"}/>
 
                     {/* ----- NUMBERS PART ----- */}
                     <Row xs="1">
                         <h3>Some students passionate by space</h3>
                     </Row>
-                    <Row className={"space_separation"}></Row>
+                    <Row className={"space_separation"}/>
                     <Row xs="3">
                         <Col><h3>20+</h3> Students</Col>
                         <Col><h3>5</h3> Teams</Col>
                         <Col>Since <h3>2019</h3></Col>
                     </Row>
-                    <Row className={"space_separation_big"}></Row>
+                    <Row className={"space_separation_big"}/>
 
                     {/* ----- "Who are we ?" PART ----- */}
                     <Row xs="1">
@@ -68,7 +72,7 @@ class Index extends Component {
                             Hauts-de-France (France), we have embarked since 2019 on the adventure of creating an engine
                             and testing it in a launcher.</p>
                     </Row>
-                    <Row className={"space_separation"}></Row>
+                    <Row className={"space_separation"}/>
 
                     {/* ----- GOAL PART ----- */}
                     <Row>
@@ -88,7 +92,7 @@ class Index extends Component {
                             </>
                         </Col>
                     </Row>
-                    <Row className={"space_separation_big"}></Row>
+                    <Row className={"space_separation_big"}/>
 
                     {/* ----- AWESOME PROJECT PRESENTATION PART ----- */}
                     <Row className={"space_wallpaper"}>
@@ -98,7 +102,7 @@ class Index extends Component {
                                 our desire for innovation, our curiosity and our ability to learn!</p>
                         </Col>
                     </Row>
-                    <Row className={"space_separation_big"}></Row>
+                    <Row className={"space_separation_big"}/>
 
                     {/* ----- ICONS PART ----- */}
                     {/*
@@ -220,7 +224,34 @@ class Index extends Component {
                             </Card></Col>
                         )}
                     </Row>
-                    <Row className={"space_separation"}></Row>
+                    <Row className={"space_separation"}/>
+
+
+                    <Row>
+                        <Col md={6}>
+                            {/* https://modelviewer.dev/editor/
+                        <script
+                            type="module"
+                            src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"/> */}
+                            <model-viewer
+                                style={{height: '400px', width: '100%'}}
+                                src={rocketModel3D}
+                                alt="A 3D model of Polaris"
+                                auto-rotate camera-controls autoplay />
+                        </Col>
+                        <Col md={6}>
+                            {/* https://modelviewer.dev/editor/
+                        <script
+                            type="module"
+                            src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"/> */}
+                            <model-viewer
+                                style={{height: '400px', width: '100%'}}
+                                src={rocketModel3Dgltf}
+                                alt="A 3D model of Polaris"
+                                auto-rotate camera-controls autoplay />
+                        </Col>
+                    </Row>
+                    <Row className={"space_separation"}/>
                 </Container>
             </div>
         )
