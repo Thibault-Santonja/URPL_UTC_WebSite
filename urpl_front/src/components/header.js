@@ -30,7 +30,7 @@ const Header = () => {
                 </NavbarBrand>
                 <Nav navbar className="ml-auto" >
                     <NavItem className={navItemClass}>
-                        <NavLink href="/" className={navLinkClass}>URPL</NavLink>
+                        <NavLink href="/about_us" className={navLinkClass}>URPL</NavLink>
                     </NavItem>
                     <NavItem className={navItemClass}>
                         <NavLink href="/news" className={navLinkClass}>News</NavLink>

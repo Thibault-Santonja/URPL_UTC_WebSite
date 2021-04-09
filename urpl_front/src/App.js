@@ -6,6 +6,8 @@ import {News} from "./pages/news";
 import {Polaris} from "./pages/polaris";
 import {Gallery} from "./pages/gallery";
 import {Contact} from "./pages/contact";
+import {AboutUs} from "./pages/aboutUs";
+import {NotFound} from "./pages/notFound";
 import {AOCS} from "./pages/team/AOCS";
 import {ASE} from "./pages/team/ASE";
 import {LLT} from "./pages/team/LLT";
@@ -38,8 +40,10 @@ function App() {
           <Route exact path="/team/LLT" component={LLT}/>
           <Route exact path="/team/MED" component={MED}/>
           <Route exact path="/team/MFDS" component={MFDS}/>
+          <Route exact path="/about_us" component={AboutUs}/>
           <Route exact path="/gallery" component={Gallery}/>
           <Route exact path="/contact" component={Contact}/>
+          <Route component={NotFound} />
         </Switch>
       </BrowserRouter>
       <footer><Footer className="AppFooter"/></footer>
