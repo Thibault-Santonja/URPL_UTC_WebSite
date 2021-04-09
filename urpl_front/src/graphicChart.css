@@ -222,13 +222,14 @@ h10 {
     height: 93vh;
     width: 100%;
     color: var(--alice-blue);
+    background-color: black;
     background-image: url("./assets/imgs/404.png");
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: auto 100%;
 }
 .not_found h2 {
     height: 100%;
