@@ -1,11 +1,12 @@
 import React from 'react';
-import {FormGroup, Col, Label, Form, Input, Row, Button, Container} from "reactstrap";
+import {FormGroup, Col, Label, Form, Input, Row, Button} from "reactstrap";
+
+/*
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
-
-const UTCPosition = [49.415324, 2.819025]
-
 const ContactMap = () => {
+    const UTCPosition = [49.415324, 2.819025]
+
     return(
         <>
             <MapContainer center={UTCPosition} zoom={10} scrollWheelZoom={true}>
@@ -21,7 +22,8 @@ const ContactMap = () => {
             </MapContainer>
         </>
     );
-};
+};*/
+
 
 const Contact  = () => {
         return(
