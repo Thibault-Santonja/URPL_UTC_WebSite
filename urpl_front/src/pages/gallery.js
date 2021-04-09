@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Button, Col, Container} from "reactstrap";
+import {Button, Card, CardColumns, CardText} from "reactstrap";
 
 import galaxy from '../assets/Andromeda_Galaxy.jpg';
 import horizon from '../assets/imgs/earth-horizon-from-space - Copy.jpg';
@@ -23,16 +23,16 @@ class Gallery extends Component {
         return(
             <div className={'page'}>
                 <h2 className={'page_title'}>Gallery</h2>
-                <Container className={'card_container'}>
+                <CardColumns>
                     {images.map(value =>
-                        <Col className={'card_gallery'} sm="4">
+                        <Card body>
                             <img src={value.source} alt={'A galaxy'}/>
-                            <p>{value.title}</p>
+                            <CardText>{value.title}</CardText>
                             <Button>See more</Button>
-                        </Col>
+                        </Card>
                     )
                     }
-                </Container>
+                </CardColumns>
             </div>
         )
     };
