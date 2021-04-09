@@ -1,5 +1,5 @@
 import React from 'react';
-import {FormGroup, Col, Label, Form, Input, Row, Button} from "reactstrap";
+import {FormGroup, Col, Label, Form, Input, Row, Button, Card, CardText, CardTitle} from "reactstrap";
 
 /*
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
@@ -9,7 +9,7 @@ const ContactMap = () => {
 
     return(
         <>
-            <MapContainer center={UTCPosition} zoom={10} scrollWheelZoom={true}>
+            <MapContainer style={{width: "100%"}} center={UTCPosition} zoom={10} scrollWheelZoom={true}>
                 <TileLayer
                     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -22,8 +22,8 @@ const ContactMap = () => {
             </MapContainer>
         </>
     );
-};*/
-
+};
+*/
 
 const Contact  = () => {
         return(
@@ -64,19 +64,23 @@ const Contact  = () => {
                         </Form>
                     </Col>
                     <Col md={3}>
-                        <Row><Col>
-                            <h3>Postal</h3>
-                            <p>URPL Space</p>
-                            <p>Rue Roger Couttolenc</p>
-                            <p>60200 Compiègne, France</p>
-                            {/*<ContactMap/>*/}
-                        </Col></Row>
                         <Row className={"space_separation"}></Row>
-                        <Row><Col>
-                            <h3>Mail</h3>
-
-                            <a href={"mailto: contact@urpl.space"}>Send Email</a>
-                        </Col></Row>
+                        <Card body outline color="primary">
+                            <CardTitle>Postal</CardTitle>
+                            <CardText>
+                                <p>URPL Space<br/>
+                                    Rue Roger Couttolenc<br/>
+                                    60200 Compiègne, France</p>
+                            </CardText>
+                            {/*<ContactMap/>*/}
+                        </Card>
+                        <Row className={"space_separation"}></Row>
+                        <Card body outline color="primary">
+                            <CardTitle>eMail</CardTitle>
+                            <CardText>
+                                <a style={{color: "black"}} href={"mailto: contact@urpl.space"}>Send us an Email</a>
+                            </CardText>
+                        </Card>
                     </Col>
                 </Row>
 

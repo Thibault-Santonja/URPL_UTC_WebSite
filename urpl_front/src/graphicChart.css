@@ -130,6 +130,7 @@ h10 {
     color: var(--united-nations-blue);
     font-family: var(--title-font);
 }
+.card-text {font-family: var(--text-font)}
 .card button {
     border: var(--alice-blue);
     background-color: var(--united-nations-blue);
