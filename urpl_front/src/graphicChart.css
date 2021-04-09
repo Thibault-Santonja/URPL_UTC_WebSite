@@ -125,21 +125,15 @@ h10 {
     font-variant: small-caps;
     font-family: var(--title-font);
 }
-.card_title {
+.card-columns {width: 80%}
+.card-title {
     color: var(--united-nations-blue);
     font-family: var(--title-font);
 }
-.card_container {
-    display: flex;
-    align-items: center;
-    align-content: space-between;
-    flex-wrap: wrap;
-}
-.card_container .card_gallery {margin-bottom: 30px}
-.card_container .card_gallery button {
+.card button {
     border: var(--alice-blue);
-    background-color: var(--united-nations-blue)}
-.card_gallery img {margin-top: 0}
+    background-color: var(--united-nations-blue);
+}
 
 
 
