@@ -33,7 +33,7 @@ const Footer = () => {
                         <Row>
                             <h4>Contact</h4>
                             <ul className={'footer_contact'}>
-                                <li className="list-unstyled">mail : <a href="contact@urpl.space">contact.urpl</a></li>
+                                <li className="list-unstyled">mail : <a href="mailto: contact@urpl.space">contact.urpl</a></li>
                                 <li className="list-unstyled"><a href="https://www.utc.fr/">Université de Technologie de Compiègne (France)</a></li>
                             </ul>
                         </Row>
