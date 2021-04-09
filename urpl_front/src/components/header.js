@@ -37,7 +37,7 @@ const Header = () => {
                     </NavItem>
                     <Dropdown className={navItemClass} isOpen={isOpen} onMouseEnter={() => setIsOpen(true)}
                               onMouseLeave={() => setIsOpen(false)} toggle={() => setIsOpen(!isOpen)}>
-                        <DropdownToggle nav caret className={navLinkClass}>The team</DropdownToggle>
+                        <DropdownToggle nav caret tag="a" href="/polaris" className={navLinkClass}>The team</DropdownToggle>
                         <DropdownMenu className={'menu_dropdown'}>
                             <DropdownItem tag="a" href="/polaris" className={navDropdownItem}>Polaris</DropdownItem>
                             <DropdownItem divider />
