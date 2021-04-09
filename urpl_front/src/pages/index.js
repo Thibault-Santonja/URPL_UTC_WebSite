@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import YouTube from 'react-youtube';
-import {Button, Col, Row, Table, Container, Card, CardTitle, CardText} from "reactstrap";
+import {Button, Col, Row, Table, Container, Card, CardTitle, CardText, CardSubtitle} from "reactstrap";
 import rocketModel from '../assets/imgs/modelisation.png';
 
 
@@ -207,22 +207,18 @@ class Index extends Component {
                         <Row className={"space_separation_big"}></Row>
 
                     {/* ----- NEWS PART ----- */}
+                    <Row><Col>
+                        <h3>Our last news :</h3>
+                    </Col></Row>
                     <Row>
-                        <Col md={12}>
-                            <h3>Our last news :</h3>
-                        </Col>
-                        <Col className={'card_container'}>
-                            {tmp_news.map(entry =>
-                                <Col sm="4">
-                                    <Card body>
-                                        <CardTitle tag="h5" className={"card_title"}>{entry.title}</CardTitle>
-                                        <p>{entry.date.toDateString()}</p>
-                                        <CardText>{entry.content}</CardText>
-                                        <Button>Go somewhere</Button>
-                                    </Card>
-                                </Col>
-                            )}
-                        </Col>
+                        {tmp_news.map(entry =>
+                            <Col sm="4"><Card body>
+                                <CardTitle tag="h5" className={"card_title"}>{entry.title}</CardTitle>
+                                <CardSubtitle className="mb-2 text-muted">{entry.date.toDateString()}</CardSubtitle>
+                                <CardText>{entry.content}</CardText>
+                                <Button>Go somewhere</Button>
+                            </Card></Col>
+                        )}
                     </Row>
                     <Row className={"space_separation"}></Row>
                 </Container>
