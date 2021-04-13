@@ -1,0 +1,16 @@
+2021/04/13 16:47:55 [notice] 2200#2028: signal process started
+2021/04/13 16:48:29 [notice] 199428#198344: signal process started
+2021/04/13 16:50:30 [notice] 191204#165104: signal process started
+2021/04/13 16:54:13 [notice] 199096#137672: signal process started
+2021/04/13 17:02:23 [emerg] 151080#196232: unknown log format "compression" in D:\Creation_Code\python\webserver\nginx-1.18.0/conf/nginx.conf:43
+2021/04/13 17:02:45 [notice] 195752#197328: signal process started
+2021/04/13 17:02:48 [notice] 195028#197832: signal process started
+2021/04/13 17:04:56 [notice] 100084#199032: signal process started
+2021/04/13 17:04:56 [error] 100084#199032: CreateFile() "D:\Creation_Code\python\webserver\nginx-1.18.0/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2021/04/13 17:05:24 [notice] 197828#195420: signal process started
+2021/04/13 17:05:24 [error] 197828#195420: CreateFile() "D:\Creation_Code\python\webserver\nginx-1.18.0/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2021/04/13 17:05:27 [notice] 199340#189508: signal process started
+2021/04/13 17:05:27 [error] 199340#189508: CreateFile() "D:\Creation_Code\python\webserver\nginx-1.18.0/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2021/04/13 17:07:25 [notice] 192080#184324: signal process started
+2021/04/13 17:07:56 [notice] 17272#140448: signal process started
+2021/04/13 17:28:32 [notice] 188532#196148: signal process started
