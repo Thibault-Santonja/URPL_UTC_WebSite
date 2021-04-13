@@ -1,7 +1,8 @@
 Espace UTC Website
 ===
 
-
+## Intro
+### Local run
 To launch the app, run the front:
 ```bash
 npm start espace_utc_front/
@@ -16,6 +17,12 @@ For easy launch, create some configuration (if you use IntellJ, PyCharm or any o
 
 Project made with Django as back and React as Front (but we can  use another technology)
 
+
+### Docker deployment
+When the project is deployed:
+1. We’ll have a backend docker container which runs the API.
+2. We’ll have an frontend docker container that builds the javascript code and passes this frontend app bundle to NGINX.
+3. We’ll have an webserver docker container that runs NGINX which will serve the static frontend app and route API calls to the backend docker.
 
 
 ## 1. Project creation 

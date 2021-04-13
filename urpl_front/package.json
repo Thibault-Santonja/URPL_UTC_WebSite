@@ -2,7 +2,8 @@
   "name": "urpl_front",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8000",
+  "homepage": "https://www.urpl.space/",
+  "proxy": "https://localhost:8000",
   "dependencies": {
     "@google/model-viewer": "^1.6.0",
     "@testing-library/jest-dom": "^5.11.9",
