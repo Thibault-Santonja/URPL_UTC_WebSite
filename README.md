@@ -19,7 +19,25 @@ parts 1.3. and 1.6.)
 Project made with Django as back and React as Front (but we can  use another technology)
 
 
-### Docker deployment
+
+### Front build
+> more information here : https://create-react-app.dev/docs/deployment/
+
+in front/package.json, please mind to add back path (=proxy) and website name :
+```json
+{
+  ...
+  "homepage": "https://www.urpl-space.com/",
+  "proxy": "https://localhost:8000",
+  ...
+}
+```
+
+run `npm run build` 
+
+
+
+### Docker deployment TODO
 
 Docker will provide us an elegant way to deploy the application any server with a minimal effort. I’ll split the 
 application into 3 services:

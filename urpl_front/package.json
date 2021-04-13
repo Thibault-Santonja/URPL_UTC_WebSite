@@ -2,7 +2,7 @@
   "name": "urpl_front",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.urpl.space/",
+  "homepage": "https://www.urpl-space.com/",
   "proxy": "https://localhost:8000",
   "dependencies": {
     "@google/model-viewer": "^1.6.0",
