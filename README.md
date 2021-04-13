@@ -13,22 +13,31 @@ And if needed (especially if you need to access to some data) run the back too:
 python manage.py runserver
 ```
 
-For easy launch, create some configuration (if you use IntellJ, PyCharm or any other JetBrain products take a look to parts 1.3. and 1.6.)
+For easy launch, create some configuration (if you use IntellJ, PyCharm or any other JetBrain products take a look to 
+parts 1.3. and 1.6.)
 
 Project made with Django as back and React as Front (but we can  use another technology)
 
 
 ### Docker deployment
-When the project is deployed:
-1. We’ll have a backend docker container which runs the API.
-2. We’ll have an frontend docker container that builds the javascript code and passes this frontend app bundle to NGINX.
-3. We’ll have an webserver docker container that runs NGINX which will serve the static frontend app and route API calls to the backend docker.
+
+Docker will provide us an elegant way to deploy the application any server with a minimal effort. I’ll split the 
+application into 3 services:
+1. **Backend**: We’ll have a backend docker container which runs the API.
+2. **Frontend**: We’ll have a frontend docker container that builds the javascript code and passes this frontend app 
+   bundle to NGINX.
+3. **Webserver (NGINX)**: We’ll have a webserver docker container that runs NGINX which will serve the static frontend 
+   app and route API calls to the backend docker.
+
+With `docker-compose`, we'll be allowed to build and run these 3 docker containers, and all services will be completely 
+isolated from each others. Like that, we can deploy easily our back and front to different servers with zero or really 
+few changes.
 
 
 ## 1. Project creation 
 ### 1.1. Base
 
-Create main folder and move into it
+Create a main folder and move into it
 ```bash
 mkdir espace_UTC_website && cd $_
 ```
@@ -108,7 +117,10 @@ With IntellJ, don't hesitate to create a Run Config :
 
 
 ### 1.4. Django REST serializers
-Serialization is the act of transforming an object into another data format. After transforming an object we can save it to a file or send it through the network. How do you render a Python class to JSON in a browser? With a Django REST serializer! A serializer converts JSON to objects. 
+Serialization is the act of transforming an object into another data format. After transforming an object we can save it
+to a file or send it through the network. How do you render a Python class to JSON in a browser? With a Django REST 
+serializer! 
+A serializer converts JSON to objects. 
 
 
 Create a new file `espace_utc_api/serializers.py`
@@ -197,7 +209,8 @@ Install with pip:
 pip install coverage
 ```
 
-And run this everytime your code changes, run coverage. Next, generate the report in html `coverage html` or call the report `coverage report`:
+And run this everytime your code changes, run coverage. Next, generate the report in html `coverage html` or call the 
+report `coverage report`:
 ```bash
 coverage run --source='.' manage.py test
 coverage html
@@ -210,7 +223,8 @@ Don't hesitate to create a configuration or run :
 ```bash
 python manage.py runserver
 ```
-And check [http://127.0.0.1:8000/api/user/](http://127.0.0.1:8000/api/user/) (note: 127.0.0.1 or localhost is the same thing : http://localhost:8000/api/user/)
+And check [http://127.0.0.1:8000/api/user/](http://127.0.0.1:8000/api/user/) (note: 127.0.0.1 or localhost is the same 
+thing : http://localhost:8000/api/user/)
 
 
 To access to the admin page (127.0.0.1:8000/admin/), mind to create a django superuser :
@@ -219,7 +233,8 @@ python manage.py createsuperuser
 ```
 
 
-**NOTE**: it is a good idea to disable the browseable API in production with this configuration in `espace_utc_app/settings.py`:
+**NOTE**: it is a good idea to disable the browseable API in production with this configuration in 
+`espace_utc_app/settings.py`:
 ```python
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': (
