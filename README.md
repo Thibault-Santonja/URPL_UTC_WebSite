@@ -19,21 +19,66 @@ parts 1.3. and 1.6.)
 Project made with Django as back and React as Front (but we can  use another technology)
 
 
+### NGinx
 
-### Front build
-> more information here : https://create-react-app.dev/docs/deployment/
+#### Configurate NGinx
+in `webserver/nginx/conf/nginx.conf`, we'll need to configurate some few stuff:
+```yaml
+http {
 
-in front/package.json, please mind to add back path (=proxy) and website name :
-```json
-{
-  ...
-  "homepage": "https://www.urpl-space.com/",
-  "proxy": "https://localhost:8000",
-  ...
+    ...
+
+    server {
+
+        ...
+
+        server_name  localhost utc.urpl.space;
+
+        location / {
+            autoindex on;
+            root ../../../python/urpl_front/build/;
+            try_files $uri $uri/ /index.html;
+        }
+
+        location /api {
+            proxy_pass http://api$request_uri;
+        }
+
+        ...
+
+    }
+
+    ...
+
 }
 ```
 
-run `npm run build` 
+We can also add this :
+```yaml
+
+        ...
+
+        # ignore cache frontend
+        location ~* (service-worker\.js)$ {
+            add_header 'Cache-Control' 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0';
+            expires off;
+            proxy_no_cache 1;
+        }
+
+        ...
+
+```
+
+
+#### Run NGinx
+Launch NGinx (the webserver) and go to `localhost/` or `localhost:80/`
+```bash
+# To start NGinx
+start nginx
+
+# If needed to stop NGinx :
+./nginx.exe -s stop
+```
 
 
 
@@ -50,6 +95,40 @@ application into 3 services:
 With `docker-compose`, we'll be allowed to build and run these 3 docker containers, and all services will be completely 
 isolated from each others. Like that, we can deploy easily our back and front to different servers with zero or really 
 few changes.
+
+
+
+
+### Front build & Launch (NGinx)
+> more information here : https://create-react-app.dev/docs/deployment/
+
+#### Front config for deployment
+in front/package.json, please mind to add back path (=proxy) and website name :
+```json
+{
+  ...
+  "homepage": "https://www.urpl-space.com/",
+  "proxy": "https://localhost:8000",
+  ...
+}
+```
+
+
+#### Build front
+run `npm run build`
+
+
+#### Run NGinx
+Launch NGinx (the webserver) and go to `localhost/` or `localhost:80/`
+```bash
+# To start NGinx
+start nginx
+
+# If needed to stop NGinx :
+./nginx.exe -s stop
+```
+
+
 
 
 ## 1. Project creation 
