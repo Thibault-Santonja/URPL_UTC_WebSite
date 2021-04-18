@@ -69,7 +69,7 @@ class AboutUs extends Component {
                         <h3>URPL history</h3>
                         <Row className={"space_separation"}/>
 
-                        <Col md={2}>
+                        <Col md={1}>
                             {this.state.listYears.map((year, idx) => (
                                 <StickyContainer style={{height: this.state.listYearHeight[idx]}}>
                                     <Sticky>{({style, isSticky}) => (
